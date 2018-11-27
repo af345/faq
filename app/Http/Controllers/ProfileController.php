@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Tests\Unit\profileTest;
+use App\Profile;
+use App\User;
 class ProfileController extends Controller
 {
     /**
@@ -43,11 +42,12 @@ class ProfileController extends Controller
         $input = $request->validate([
             'fname' => 'required|alpha',
             'lname' => 'required|alpha',
+            'body' => 'required',
         ], [
             'fname.required' => ' First is required',
-            'fname.alpha' => ' must be alphanumeric',
             'lname.required' => ' Last is required',
-            'lname.alpha' => ' must be alphanumeric',
+            'body.required' => ' Body is required',
+
         ]);
         $input = request()->all();
         $profile = new Profile($input);
@@ -92,11 +92,11 @@ class ProfileController extends Controller
         $input = $request->validate([
             'fname' => 'required|alpha',
             'lname' => 'required|alpha',
+            'body' => 'required',
         ], [
             'fname.required' => ' First is required',
-            'fname.alpha' => ' must be alphanumeric',
             'lname.required' => ' Last is required',
-            'lname.alpha' => ' must be alphanumeric',
+            'body.required' => ' Body is required',
         ]);
         $profile = Profile::find($profile);
         $profile->fname = $request->lname;

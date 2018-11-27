@@ -40,10 +40,9 @@ class QuestionController extends Controller
     public function store(Request $request)
     {
         $input = $request->validate([
-            'body' => 'required|alpha|min:5',
+            'body' => 'required|min:5',
         ], [
             'body.required' => 'Body is required',
-            'body.alpha' => 'Body must be alphanumeric',
             'body.min' => 'Body must be at least 5 characters',
         ]);
         $input = request()->all();
@@ -51,7 +50,7 @@ class QuestionController extends Controller
         $question->user()->associate(Auth::user());
         $question->save();
         return redirect()->route('home')->with('message', 'IT WORKS!');
-        // return redirect()->route('questions.show', ['id' => $question->id]);
+        // return redirect()->route('question.show', ['id' => $question->id]);
     }
     /**
      * Display the specified resource.
@@ -84,16 +83,15 @@ class QuestionController extends Controller
     public function update(Request $request, Question $question)
     {
         $input = $request->validate([
-            'body' => 'required|alpha|min:5',
+            'body' => 'required|min:5',
         ], [
             'body.required' => 'Body is required',
-            'body.alpha' => 'Body must be alphanumeric',
             'body.min' => 'Body must be at least 5 characters',
         ]);
         $input = request()->all();
         $question->body = $request->body;
         $question->save();
-        return redirect()->route('questions.show',['question_id' => $question->id])->with('message', 'Saved');
+        return redirect()->route('question.show',['question_id' => $question->id])->with('message', 'Saved');
     }
     /**
      * Remove the specified resource from storage.
@@ -104,6 +102,6 @@ class QuestionController extends Controller
     public function destroy(Question $question)
     {
         $question->delete();
-        return redirect()->route('home');
+        return redirect()->route('home')->with('message', 'Deleted');
     }
 }
