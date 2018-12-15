@@ -34,11 +34,11 @@ Route::resources([
 
 Route::post('/email', function (\Illuminate\Http\Request $request, \Illuminate\Mail\Mailer $mailer) {
     $mailer
-        ->to($request->input('email'))
-        ->send(new \App\Mail\MyMail($request->input('body')));
+        ->to($request->input('body'))
+        ->send(new \App\MailNotification($request->input('body')));
 
     return redirect()->back();
-})->name('email');
+})->name('notification');
 Route::get('pushNotifications',function(Request $request){
     return view('pushNotifications');
 });
