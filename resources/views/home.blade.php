@@ -29,8 +29,12 @@
                                         <div class="card-footer">
                                             <p class="card-text">
 
-                                                <a class="btn btn-primary float-right" href="{{ route('question.show', ['id' => $question->id]) }}">
+                                                <a class="btn btn-primary float-left" href="{{ route('question.show', ['id' => $question->id]) }}">
                                                     View
+                                                </a>
+
+                                                <a class="btn btn-primary float-right"
+                                                   href='/pushNotification'>E-Mail</>
                                                 </a>
                                             </p>
                                         </div>

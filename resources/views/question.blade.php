@@ -38,9 +38,13 @@
                                 <div class="card-body">{{$answer->body}}</div>
                                 <div class="card-footer">
 
-                                    <a class="btn btn-primary float-right"
+                                    <a class="btn btn-primary float-left"
                                        href="{{ route('answer.show', ['question_id'=> $question->id,'answer_id' => $answer->id]) }}">
                                         View
+                                    </a>
+
+                                    <a class="btn btn-primary float-right"
+                                       href='/pushNotification'>E-Mail</>
                                     </a>
 
                                 </div>
@@ -52,8 +56,5 @@
                             </div>
                         @endforelse
 
-
-                    </div>
-                </div>
             </div>
 @endsection
