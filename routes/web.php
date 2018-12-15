@@ -32,14 +32,7 @@ Route::resources([
     'question' => 'QuestionController',
 ]);
 
-Route::post('/email', function (\Illuminate\Http\Request $request, \Illuminate\Mail\Mailer $mailer) {
-    $mailer
-        ->to($request->input('body'))
-        ->send(new \App\MailNotification($request->input('body')));
-
-    return redirect()->back();
-})->name('notification');
-Route::get('pushNotifications',function(Request $request){
-    return view('pushNotifications');
+Route::get('pushNotification',function($request){
+    return view('pushNotification');
 });
 
