@@ -16,7 +16,7 @@
         </head>
         <body>
         <div class="flex-center position-ref full-height">
-            <form action="{{ route('sendmail') }}" method="post">
+            <form action="{{ route('pushemail') }}" method="post">
                 <input type="email" name="mail" >
                 <input type="text" name="body" >
                 <button type="submit">E-mail</button>

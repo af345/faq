@@ -34,7 +34,7 @@
                                                 </a>
 
                                                 <a class="btn btn-primary float-right"
-                                                   href='/pushNotification'>E-Mail</>
+                                                   href='/pushemail'>E-Mail</>
                                                 </a>
                                             </p>
                                         </div>

@@ -32,7 +32,7 @@ Route::resources([
     'question' => 'QuestionController',
 ]);
 
-Route::get('pushNotification',function($request){
-    return view('pushNotification');
+Route::get('pushemail',function(){
+    return view('emailPush');
 });
 
