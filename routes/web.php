@@ -33,6 +33,6 @@ Route::resources([
 ]);
 
 Route::get('pushemail',function(){
-    return view('emailPush');
+    return view('views/emailPush');
 });
 
