@@ -44,8 +44,7 @@
                                     </a>
 
                                     <a class="btn btn-primary float-right"
-                                       href='/pushemail'>E-Mail</>
-                                    </a>
+                                       href='/pushemail'>E-Mail </a>
 
                                 </div>
                             </div>
@@ -55,6 +54,9 @@
                                 <div class="card-body"> No Answers</div>
                             </div>
                         @endforelse
-
+                    </div>
+                </div>
+            </div>
+        </div>
             </div>
 @endsection
