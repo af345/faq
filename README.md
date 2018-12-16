@@ -10,9 +10,10 @@ To run the FAQ project:
 How to Use:
 1. Register as a user or log in as a user.
 2. Once a user creates a question 2 buttons will show bellow it.
-3. One is to view the question and answer. The other is send a e-mail push notification.
-4. When the e-mail notification button is used it'll prompt you to another view.
-5. Enter your email and body of the email.
+3. One is to view the question and answer. The other is send an e-mail push notification on the question card.
+5. If you go to the question and answer screen you could also send e-mail push notification on the answer card.
+4. When the e-mail notification button is used in either the question or answer card it'll prompt you to another view.
+5. This is the e-mail push screen, enter your email and body of the email.
 6. Use the e-mail button to send the email push notification. 
 7. This e-mail will be sent to MailTrap.
 8. After sending the notification you have the ability to go back to the home, question or answer page
