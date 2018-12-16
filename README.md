@@ -11,16 +11,17 @@ How to Use:
 1. Register as a user or log in as a user.
 2. Once a user creates a question 2 buttons will show bellow it.
 3. One is to view the question and answer. The other is send a e-mail push notification.
-4. When the e-mail notification is used it'll prompt you to another view.
+4. When the e-mail notification button is used it'll prompt you to another view.
 5. Enter your email and body of the email.
-6. Use the email button to send the email push notification. 
-7. This email will be sent to MailTrap.
+6. Use the e-mail button to send the email push notification. 
+7. This e-mail will be sent to MailTrap.
+8. After sending the notification you have the ability to go back to the home, question or answer page
 
 Credentials to login to MailTrap
 email: af345@njit.edu
 password: IS6012018
 
-Epic - Adding push notifications to FAQ application 
+Epic - Adding e-mail push notifications to FAQ application 
 
 User Story 1 - As a user I want the ability to send notifications while in the question card
 
