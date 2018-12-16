@@ -26,6 +26,6 @@ class MailNotification extends Mailable
     public function build()
     {
         return $this->from('faq@laravel.dev')
-            ->view('pushNotification');
+            ->view('emailPush');
     }
 }

@@ -7,6 +7,7 @@
 
         <a href="{{ url('/home') }}">Go Back To Home </a>
         <a href="{{ url('/question') }}">Go Back To Questions </a>
+        <a href="{{ url('/answer') }}">Go Back To Answers </a>
 
         <head>
             <meta charset="utf-8">
@@ -17,7 +18,7 @@
         <body>
         <div class="flex-center position-ref full-height">
             <form action="{{ route('pushemail') }}" method="post">
-                <input type="email" name="mail" >
+                <input type="email" name="e-mail" >
                 <input type="text" name="body" >
                 <button type="submit">E-mail</button>
                 {{ csrf_field() }}

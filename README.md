@@ -22,8 +22,10 @@ password: IS6012018
 
 Epic - Adding push notifications to FAQ application 
 
-User Story 1 - As a user I want the ability to send notifications in the question form
+User Story 1 - As a user I want the ability to send notifications while in the question card
 
-User Story 2 - As a user I want the ability to send notifications in the answer form
+User Story 2 - As a user I want the ability to send notifications while in the answer card
+
+User Story 3 - After sending a notification I want the ability to go back to the home, question or answer page
 
 https://is601onlineproject3.herokuapp.com/
